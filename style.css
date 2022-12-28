@@ -13,6 +13,26 @@ body{
     
 
 }
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+a:hover::after{
+   
+    width: 100%;
+   
+}
 .navbar-container{
     display: flex;
     align-items: center;
