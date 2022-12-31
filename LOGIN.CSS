@@ -1,75 +1,87 @@
-* {
-    padding: 5px;
+
+*{
     margin: 0;
-    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-body {
-    background-image: linear-gradient(rgba(4, 9, 100, 0.6), rgba(4, 9, 100, 0.6)), url(./imag/login-background.jpg);
+body{
+    font-family: 'Lato', sans-serif; 
+    color: white;
+}
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(./imag/login-background.jpg);
+    opacity: 1;
+    block-size: cover;
     background-size: cover;
-    backface-visibility: initial;
-    
-    /* background-position: center; */
-
-   
-
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-
-.login-form {
-    width: 350px;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+b{
+    
+}
+.form-container{
     position: absolute;
-    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(20, 20, 20, 0.3),rgba(138, 81, 15, 0.3));
+    width: 380px;
+    padding: 29px 25px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
 }
-
-.login-form h1 {
-    font-size: 40px;
+h1{
+    font-size: 2em;
     text-align: center;
-    text-transform: uppercase;
-    margin: 25px -180px;;
-    background-color: black;
-    border-radius: 20px;
+    margin-bottom: 0.5em;
 }
-
-.login-form p {
-    font-size: 20px;
-    margin: 20px 0px ;
-    background-color: black;
-    border-radius: 50%;
-
-}
-
-.login-form input {
-    font-size: 16px;
-    width: 90%;
-    padding: 15px 10px;
-    border: 0;
+.control input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
     outline: none;
-    border-radius: 5px;
+    margin: 1em 0;
 }
-
-.login-form button {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 20px 0;
-    padding: 10px 15px;
-    width: 50%;
-    border-radius: 5px;
-    border: 0;
-
+.control input[type="submit"]{
+    background: rgb(0, 0, 0);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .7;
+    transition: opacity .2 ease;
 }
-a{
+.control input[type="submit"]:hover{
+    opacity: 1;
+}
+.link{
+    text-align: center;
+}
+.link a{
     text-decoration: none;
-    /* color: white; */
-    color: red;
+    color: #fff;
+    opacity: .7;
+    transition: opacity .3s ease;
 }
-button:hover{
-    background-color: red;
-    color: white;
-    
+.link a:hover{
+    opacity: 1;
 }
-a:hover{
-    color: white;
-}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+login-page/style.css at master · smarthjaswal/login-page
